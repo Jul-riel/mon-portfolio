@@ -1,11 +1,47 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// C'est ici que la logique JavaScript s'écrit (on verra ça plus tard)
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Mon Portfolio | Développeur Web</title>
+		<!-- Intégration de Tailwind CSS pour appliquer le style facilement -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="bg-slate-900 text-white font-sans">
+		
+		<!-- SECTION HERO (Page d'accueil) -->
+		<section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+			
+			<!-- Titre principal animé avec un dégradé -->
+			<h1 class="text-5xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+				Bonjour, je suis Jul-riel 👋
+			</h1>
+			
+			<!-- Votre spécialité -->
+			<p class="text-2xl text-slate-300 font-semibold mb-2">
+				Développeur Fullstack / Frontend
+			</p>
+			
+			<!-- Courte présentation -->
+			<p class="text-md text-slate-400 max-w-xl mb-8">
+				Je conçois et développe des applications web modernes, performantes et centrées sur l'expérience utilisateur. Bienvenue sur mon portfolio.
+			</p>
+			
+			<!-- Boutons d'interaction -->
+			<div class="flex gap-4">
+				<a href="#projets" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition">
+					Voir mes projets
+				</a>
+				<a href="https://linkedin.com" target="_blank" class="border border-slate-700 hover:border-slate-500 px-6 py-3 rounded-lg font-medium transition">
+					Me contacter
+				</a>
+			</div>
+			
+		</section>
+
+	</body>
+</html>
